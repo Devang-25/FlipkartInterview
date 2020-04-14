@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 200px;
+            border: 1px black solid
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .label{
+            margin:5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <h2>Order Details</h2>
+            <div>Raised on  : <span>10/2/2019</span></div>
+            <div>Type :  <span>  High Priority</span>   </div>
+            <div>Total Amount :  <span>Inr 3000</span></div>
+            <div>Payment Term :  <span> Pay by 90 days</span></div>
+            <div>Status :  <span>Approved</span></div>
+        </div>
+        <div class="column">
+            <h2>Ship to Address Details</h2>
+            <div class="label">Name : <span>Flipkart India PvT limited</span></div>
+            <div class="label">Address :  <span>Flipkart Internet Private Limited, Ozone Manay Tech Park, #56/18 & 55/09, 7th Floor,
+                    Garvebhavipalya</span></div>
+        </div>
+        <div class="column">
+            <h2>Billing Address Details</h2>
+            <div class="label">Name  :  <span>Flipkart Internet Private Limited</span></div>
+            <div class="label">Address  :   <span>Flipkart Internet Private Limited, Ozone Manay Tech Park, #56/18 & 55/09, 7th Floor,
+                Garvebhavipalya</span></div>
+        </div>
+    </div>
+</body>
+
+</html>
